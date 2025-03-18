@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Asifur Rahman | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 relative z-20">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">Asifur Rahman</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center bg-blue-600 text-white">
+        <section class="h-[70vh] bg-[url('c.jpg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center text-white text-center px-6 relative">
+            <div class="absolute w-full h-full bg-black opacity-50"></div> <!-- Dark overlay -->
+            <div class="relative z-10">
+                <h2 class="text-4xl font-bold">Design Software <br> Software Development Consultant Services</h2>
+                <p class="text-lg mt-4">A passionate Web Developer & Programmer</p>
+                <a href="#projects" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-md font-semibold hover:bg-gray-200">View My Work</a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-center mb-6 font-semibold underline decoration-1 underline-offset-8 text-gray-400 text-2xl h-10">What We Do</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-40 flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <img src="c.gif" class="w-28 h-28 mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-500">HTML & CSS</h3>
+                    <p class="text-gray-600 mt-2">Building responsive and modern web pages with clean and efficient code.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-40 flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <img src="d.gif" alt="C" class="w-28 h-28 mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-500">C & C++</h3>
+                    <p class="text-gray-600 mt-2">Efficient coding with optimized algorithms and problem-solving skills.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-40 flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
+                    <img src="e.gif" alt="Python" class="w-28 h-28 mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-500">Python</h3>
+                    <p class="text-gray-600 mt-2">Scripting, automation, and data analysis with Python programming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Price Section -->
+    <section id="products" class="bg-gray-900 px-6">
+        <div class="container mx-auto py-12">
+            <h2 class="text-center mb-6 font-semibold underline decoration-1 underline-offset-8 text-gray-400 text-2xl h-20">
+                Select Your Plan
+            </h2>
+            <h4 class="text-gray-600 mb-10 font-bold text-6xl">We build <span class="text-blue-600">reliable infrastructure</span>, use comprehensive in-house tools </h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg p-8 flex flex-col items-center text-center shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <p class="text-2xl text-blue-500 font-semibold mb-4">Basic</p>
+                    <h3 class="text-4xl font-bold text-gray-800 mb-6">$500/<span class="text-gray-400 text-xl">month</span></h3>
+                    <ul class="text-lg text-blue-900 mb-6">
+                        <li>Live Online Classes</li>
+                        <li>Hands on Project</li>
+                        <li>Live Doubt Session</li>
+                        <li>Certificate on Completion</li>
+                    </ul>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Buy Now</button>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-8 flex flex-col items-center text-center shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <p class="text-2xl text-red-400 font-semibold mb-4">Pro</p>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-6">$1000/<span class="text-gray-400 text-xl">month</span></h3>
+                    <ul class="text-lg text-red-900 mb-6">
+                        <li>All Basic Features</li>
+                        <li>Data Structure and Algorithms</li>
+                        <li>Memory Management in C</li>
+                        <li>Limit upto 2 users</li>
+                    </ul>
+                    <button class="bg-red-400 hover:bg-red-500 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Buy Now</button>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-8 flex flex-col items-center text-center shadow-lg transform hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <p class="text-3xl text-green-500 font-semibold mb-4">Premium</p>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-6">$1600/<span class="text-gray-400 text-xl">month</span></h3>
+                    <ul class="text-lg text-green-900 mb-6">
+                        <li>All standard Features</li>
+                        <li>Recorded Lectures</li>
+                        <li>Placement Assistance</li>
+                        <li>Limit upto 4 users</li>
+                    </ul>
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
