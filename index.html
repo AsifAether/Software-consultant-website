@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Asifur Rahman | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+</head>
+<body class="bg-gray-900 text-gray-900">
+    
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-black/85 shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center py-6 px-6">
+        <!-- Logo -->
+        <a href="#" class="text-3xl font-extrabold text-amber-50 tracking-wide">Asifur Rahman</a>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden md:flex space-x-8 font-medium text-lg text-amber-50">
+            <li><a href="#clients" class="hover:text-amber-400 transition duration-300">Clients</a></li>
+            <li><a href="#products" class="hover:text-amber-400 transition duration-300">Products</a></li>
+            <li><a href="#contact" class="hover:text-amber-400 transition duration-300">Contact</a></li>
+            <li>
+                <a class="bg-amber-500 hover:bg-amber-600 text-amber-50 py-2 px-5 rounded-lg shadow-md transition duration-300" 
+                   href="#">
+                   Download
+                </a>
+            </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                <linearGradient id="quuD6iWlRsjYK1myOCqMCa_praCGGDORz8J_gr1" x1="-21.362" x2="68.152" y1="50.19" y2="-1.491" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#faf3df"></stop><stop offset="1" stop-color="#255b70"></stop></linearGradient><path fill="url(#quuD6iWlRsjYK1myOCqMCa_praCGGDORz8J_gr1)" d="M38,14H6v-4c0-2.2,1.8-4,4-4h32v4C42,12.2,40.2,14,38,14z M42,24v-4H10c-2.2,0-4,1.8-4,4v4 h32C40.2,28,42,26.2,42,24z M42,38v-4H10c-2.2,0-4,1.8-4,4v4h32C40.2,42,42,40.2,42,38z"></path>
+                </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-black/90 text-white py-4">
+        <ul class="flex flex-col items-center space-y-4 text-lg">
+            <li><a href="#clients" class="hover:text-amber-400 transition duration-300">Clients</a></li>
+            <li><a href="#products" class="hover:text-amber-400 transition duration-300">Products</a></li>
+            <li><a href="#contact" class="hover:text-amber-400 transition duration-300">Contact</a></li>
+            <li>
+                <a class="bg-amber-700 hover:bg-amber-500 text-white py-2 px-5 rounded-lg shadow-md transition duration-300" 
+                   href="#">
+                   Download
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- JavaScript for Mobile Menu Toggle -->
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+<!-- Hero Section -->
+<section class="relative text-center text-white overflow-hidden pt-24"> <!-- Added pt-24 to provide space from navbar -->
+    <!-- Video Background -->
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+        <source src="b.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Gradient Overlay for Better Readability -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col justify-center items-center h-[65vh] px-6 text-white">
+        <h2 class="text-6xl md:text-8xl font-extrabold leading-tight animate-fadeIn">
+            Design Software
+            <br>
+            <span class="text-4xl md:text-5xl text-amber-400 font-semibold">Software Development Consultant Services</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-2xl animate-fadeIn delay-200">
+            Expert guidance and development solutions to build innovative, scalable, and secure software.
+        </p>
+        
+        <a href="https://github.com/AsifAether" class="mt-6 bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg shadow-lg hover:bg-amber-500 hover:text-white transition-all duration-300 transform hover:scale-105 animate-fadeIn delay-400">
+            View My Work
+        </a>
+    </div>
+</section>
+
+<!-- Smooth Animation -->
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-400 { animation-delay: 0.4s; }
+</style>
+
+    
+    <!-- Clients Section -->
+<section id="clients" class="mx-auto px-6 text-gray-500 bg-amber-50">
+    <h2 class="py-20 bg-amber-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-center font-semibold text-gray-400 text-3xl lg:text-4xl h-20">
+        Trusted By The Best Clients
+    </h2>
+
+    <!-- Image container -->
+    <div class="flex flex-wrap justify-center gap-20">
+        <img src="a.png" alt="Client 1" class="w-40 h-24 object-contain transform 
+        hover:scale-105 transition-transform">
+        <img src="e.png" alt="Client 2" class="w-40 h-24 object-contain transform 
+        hover:scale-105 transition-transform">
+        <img src="b.png" alt="Client 3" class="w-40 h-24 object-contain transform 
+        hover:scale-105 transition-transform">
+        <img src="d.png" alt="Client 4" class="w-60 h-24 object-contain transform 
+        hover:scale-105 transition-transform">
+        <img src="h.png" alt="Client 5" class="w-40 h-24 object-contain transform 
+        hover:scale-105 transition-transform">
+    </div>
+</section>
+<!-- Full Width Slider Section -->
+<section class="relative w-full h-[400px] text-amber-50 overflow-hidden">
+    <!-- Background Images -->
+    <div id="imageContainer" class="absolute inset-0 bg-cover bg-center transition-all duration-1000"></div>
+
+    <!-- Text Container -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-center p-5">
+        <h1 id="sliderText" class="text-4xl font-semibold opacity-0 transition-opacity duration-1000 ease-in-out"></h1>
+    </div>
+</section>
+
+<script>
+    // List of texts and corresponding images (only 2 slides)
+    const slides = [
+        { text: "🚀 Build Scalable & Secure Software with Us", img: "sss.jpg" },
+        { text: "💡 Expert Developers for Your Dream Project", img: "sssss.jpg" }
+    ];
+
+    let currentIndex = 0;
+    const sliderText = document.getElementById("sliderText");
+    const imageContainer = document.getElementById("imageContainer");
+
+    // Function to update slide
+    function updateSlide() {
+        sliderText.style.opacity = "0"; // Fade out text
+        setTimeout(() => {
+            sliderText.textContent = slides[currentIndex].text;
+            imageContainer.style.backgroundImage = `url(${slides[currentIndex].img})`;
+            sliderText.style.opacity = "1"; // Fade in text
+        }, 500);
+    }
+
+    // Next and Previous Slide functions
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlide();
+    }
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlide();
+    }
+
+    // Auto slide every 3 seconds
+    setInterval(nextSlide, 3000);
+
+    // Initialize the first slide
+    updateSlide();
+</script>
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-900">
+    <div class="grid mx-auto px-6 text-center">
+        <h2 class="text-center mb-6 font-semibold underline decoration-2 underline-offset-8 text-gray-400 text-3xl lg:text-4xl h-20">
+            What We Do
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
+            <!-- Skill 1 -->
+            <div class="bg-gray-900 shadow-lg rounded-xl p-8 lg:p-12 flex flex-col items-center text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <img src="c.gif" alt="HTML & CSS" class="w-32 h-32 mb-6 rounded-full border-4 border-blue-500 object-cover">
+                <h3 class="text-2xl lg:text-3xl font-bold text-gray-100">Front-end
+                    Development</h3>
+                <p class="text-gray-400 mt-4 text-lg lg:text-xl">Building responsive and modern web pages with clean, efficient code, ensuring optimal user experience.</p>
+                <a href="#" class="text-blue-600 mt-6 inline-block font-medium hover:underline text-2xl">Learn More →</a>
+            </div>
+            
+            <!-- Skill 2 -->
+            <div class="bg-gray-900 shadow-lg rounded-xl p-8 lg:p-12 flex flex-col items-center text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <img src="d.gif" alt="C & C++" class="w-32 h-32 mb-6 rounded-full border-4 border-red-400">
+                <h3 class="text-2xl lg:text-3xl font-bold text-gray-100">Back-end
+                    Development</h3>
+                <p class="text-gray-400 mt-4 text-lg lg:text-xl">Efficient coding with optimized algorithms and problem-solving skills, enabling performance-driven solutions.</p>
+                <a href="#" class="text-red-600 mt-6 inline-block font-medium hover:underline text-2xl">Learn More →</a>
+            </div>
+            
+            <!-- Skill 3 -->
+            <div class="bg-gray-900 shadow-lg rounded-xl p-8 lg:p-12 flex flex-col items-center text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <img src="e.gif" alt="Python" class="w-32 h-32 mb-6 rounded-full border-4 border-green-400">
+                <h3 class="text-2xl lg:text-3xl font-bold text-gray-100">Research &
+                    Analysis</h3>
+                <p class="text-gray-400 mt-4 text-lg lg:text-xl">Scripting, automation, and data analysis with Python programming, delivering scalable and efficient solutions.</p>
+                <a href="#" class="text-green-600 mt-6 inline-block font-medium hover:underline">Learn More →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Product Price Section -->
+<section id="products" class="bg-gray-900 px-6">
+    <div class="container mx-auto py-12">
+        <h2 class="text-center mb-6 font-semibold underline decoration-1 underline-offset-8 text-gray-400 text-3xl h-20">
+            Select Your Plan
+        </h2>
+        <h4 class="text-gray-600 mb-10 font-bold text-6xl text-center">We build <span class="text-blue-600 text">reliable infrastructure</span>, use comprehensive in-house tools </h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div
+                class="price-col bg-blue-100
+                    rounded-lg p-10 min-h-[500px] flex flex-col items-center 
+                    justify-center text-center shadow-2xl transform 
+                    hover:scale-105 transition-transform duration-300">
+                <p class="text-3xl text-blue-500 font-semibold mb-4">
+                    Basic
+                </p>
+                <hr class="w-16 border-2 border-blue-500 mb-6">
+                <h3 class="text-5xl font-bold text-gray-800 mb-6">
+                    $500/<span class="text-gray-400 text-xl">month</span>
+                </h3>
+                <ul class="text-lg text-blue-900 mb-6">
+                    <li>Live Online Classes</li>
+                    <li>Hands-on Project</li>
+                    <li>Live Doubt Session</li>
+                    <li>Certificate on Completion</li>
+                </ul>
+                <button
+                    class="buy-btn bg-blue-500 hover:bg-blue-600 
+                        text-white font-semibold py-3 px-8 rounded-lg 
+                        transition duration-300 ease-in-out transform 
+                        hover:scale-105 transition-transform duration-300">Buy Now
+                </button>
+            </div>
+            <div
+                class="price-col bg-red-100
+                    rounded-lg p-10 min-h-[500px] flex flex-col items-center 
+                    justify-center text-center shadow-2xl transform 
+                    hover:scale-105 transition-transform duration-300">
+                <p class="text-3xl text-red-400 font-semibold mb-4">
+                    Pro
+                </p>
+                <hr class="w-16 border-2 border-red-400 mb-6">
+                <h3 class="text-5xl font-bold text-gray-900 mb-6">
+                    $1000/<span class="text-lg text-gray-400">month</span>
+                </h3>
+                <ul class="text-lg text-red-900 mb-6">
+                    <li>All Basic Features</li>
+                    <li>Data Structure and Algorithms</li>
+                    <li>Memory Management in C</li>
+                    <li>Limit upto 2 users</li>
+                </ul>
+                <button
+                    class="buy-btn bg-red-400 hover:bg-red-500 
+                        text-red-900 font-semibold py-3 px-8 rounded-lg 
+                        transition duration-300 ease-in-out transform 
+                        hover:scale-105 transition-transform duration-300">Buy Now
+                </button>
+            </div>
+            <div
+                class="price-col bg-green-100 rounded-lg p-10 min-h-[500px] 
+                    flex flex-col items-center justify-center text-center 
+                    shadow-2xl transform hover:scale-105 
+                    transition-transform duration-300">
+                <p class="text-3xl text-green-500 font-semibold mb-4">
+                    Premium
+                </p>
+                <hr class="w-16 border-2 border-green-500 mb-6">
+                <h3 class="text-5xl font-bold text-gray-900 mb-6">
+                    $1600/<span class="text-lg text-gray-400">month</span>
+                </h3>
+                <ul class="text-lg text-green-900 mb-6">
+                    <li>All standard Features</li>
+                    <li>Recorded Lectures</li>
+                    <li>Placement Assistance</li>
+                    <li>Limit upto 4 users</li>
+                </ul>
+                <button
+                    class="buy-btn bg-green-500 hover:bg-green-600 
+                        text-white font-semibold py-3 px-8 rounded-lg 
+                        transition duration-300 ease-in-out transform 
+                        hover:scale-105 transition-transform duration-300">Buy Now
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="message" class="hidden fixed bottom-0 left-0 right-0 bg-green-500 text-white text-center py-4">Plan purchased successfully!</div>
+</section>
+
+<!-- Meet Our Team Section -->
+<section id="team" class="bg-gray-100 text-center py-16">
+    <h2 class="text-center mb-6 font-semibold text-gray-600 text-3xl lg:text-4xl h-20">Meet Our Team</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Team Member 1 -->
+      <div>
+        <img
+          alt="Portrait of John Doe, DevOps"
+          class="rounded-full mx-auto mb-4 transform 
+          hover:scale-105 transition-transform duration-300"
+          height="300"
+          src="w.png"
+          width="300"
+        />
+        <h3 class="text-xl font-bold">Front-end</h3>
+        <p class="text-gray-600">Developer</p>
+      </div>
+      <!-- Team Member 2 -->
+      <div>
+        <img
+          alt="Portrait of Tinh Nguyen, Designer"
+          class="rounded-full mx-auto mb-4 transform 
+          hover:scale-105 transition-transform duration-300"
+          height="300"
+          src="www.png"
+          width="300"
+        />
+        <h3 class="text-xl font-bold">Back-end</h3>
+        <p class="text-gray-600">Developer</p>
+      </div>
+      <!-- Team Member 3 -->
+      <div>
+        <img
+          alt="Portrait of Maria Ote, Developer"
+          class="rounded-full mx-auto mb-4 transform 
+          hover:scale-105 transition-transform duration-300"
+          height="300"
+          src="ww.png"
+          width="300"
+        />
+        <h3 class="text-xl font-bold">Researcher</h3>
+        <p class="text-gray-600">Analyst</p>
+      </div>
+    </div>
+  </section>
+<!-- massage -->
+<section id="products" class="bg-amber px-6">
+    <div class="container mx-auto py-12">
+		<h2 class="text-center mb-6 font-semibold text-gray-300 text-3xl lg:text-4xl  h-20">
+			We love open source
+		</h2>
+        <img src="c.gif" alt="Python" class="w-28 h-28 mb-6 mx-auto">
+		<h4 class="text-gray-600 mb-10 font-bold text-6xl text-center">We build <span class="text-blue-600">reliable infrastructure</span>, use comprehensive in-house tools </h4>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-6 text-gray-100">Contact Me</h2>
+        <div class="text-center text-gray-100">
+            <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+            <div class="mt-6 space-x-6">
+                <a href="https://github.com/AsifAether" class="text-blue-500 hover:underline">GitHub</a>
+                <a href="https://www.linkedin.com/in/md-asifur-rahman-621348335/" class="text-blue-500 hover:underline">LinkedIn</a>
+                <a href="mailto:asifaryaninfo@gmail.com" class="text-blue-500 hover:underline">asifaryaninfo@gmail.com</a>
+            </div>
+        </div>
+    </section>
+    
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-gray-100 py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        
+        <!-- Logo and Brief Info -->
+        <div class="flex flex-col items-center md:items-start">
+            <a href="#" class="text-3xl font-extrabold text-amber-50 mb-4">Asifur Rahman</a>
+            <p class="text-gray-400 text-lg mb-4">Innovative software solutions for modern problems. We build scalable, secure, and user-friendly applications to power your digital transformation.</p>
+            <a href="#" class="text-blue-600 hover:text-amber-500 transition duration-300">Learn More About Us →</a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-col items-center md:items-start">
+            <h4 class="text-2xl font-semibold text-amber-50 mb-4">Quick Links</h4>
+            <ul class="space-y-3">
+                <li><a href="#clients" class="text-gray-400 hover:text-amber-500 transition duration-300">Clients</a></li>
+                <li><a href="#products" class="text-gray-400 hover:text-amber-500 transition duration-300">Products</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-amber-500 transition duration-300">Contact</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-amber-500 transition duration-300">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="flex flex-col items-center md:items-start">
+            <h4 class="text-2xl font-semibold text-amber-50 mb-4">Connect with Us</h4>
+            <div class="flex space-x-6">
+                <a href="https://github.com/AsifAether" target="_blank" class="text-gray-400 hover:text-amber-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 40 40">
+                        <path fill="#b6c9d6" d="M38.5,20c0,10.299-8.391,18.5-18.5,18.5C9.892,38.5,1.5,30.299,1.5,20S9.701,1.5,20,1.5 S38.5,9.701,38.5,20z"></path><path fill="#fff" d="M33.171,19.24c0,2.306-1.191,5.51-3.148,7.102c-1.582,1.289-3.672,1.695-6.034,1.823 c0.888,0.539,1.479,1.515,1.479,2.629v7.636C23.979,38.8,22.429,39,20.832,39c-1.582,0-3.127-0.195-4.606-0.565v-5.017 c-0.642,0.2-1.484,0.318-2.568,0.262c-3.595-0.19-4.108-2.372-4.683-3.913c-0.58-1.541-2.378-1.736-2.121-2.372 c1.241-0.426,2.215-0.02,2.874,0.482c0.523,0.398,0.887,0.961,1.131,1.571c0.279,0.697,1.02,1.86,2.86,1.86 c1.299,0,2.069-0.303,2.511-0.601c0.026-1.089,0.621-2.033,1.494-2.552c-2.506-0.159-4.704-0.632-6.321-2.039 c-1.797-1.561-2.881-4.678-2.881-6.876c0-1.833,0.755-4.093,2.049-5.515c0.041-0.041,0.077-0.087,0.128-0.128 c-0.298-0.894-0.642-2.66,0.195-4.822c2.49-0.046,4.457,1.315,5.258,1.972c1.448-0.334,3.03-0.493,4.694-0.493 c1.705,0,3.333,0.149,4.806,0.493c0.801-0.657,2.773-2.018,5.258-1.967c0.873,2.249,0.467,4.072,0.164,4.925 C32.401,15.229,33.171,17.391,33.171,19.24z"></path><path fill="#788b9c" d="M20,39C9.523,39,1,30.477,1,20C1,9.346,9.346,1,20,1s19,8.346,19,19C39,30.477,30.477,39,20,39z M20,2C9.907,2,2,9.907,2,20c0,9.925,8.075,18,18,18s18-8.075,18-18C38,9.907,30.093,2,20,2z"></path>
+                        </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/asifurrahman/" target="_blank" class="text-gray-400 hover:text-amber-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 40 40">
+                        <path fill="#8bb7f0" d="M2.5 2.5H37.5V37.5H2.5z"></path><path fill="#4e7ab5" d="M37,3v34H3V3H37 M38,2H2v36h36V2L38,2z"></path><path fill="#fff" d="M8 16.077L13.538 16.077 13.538 27.085 13.538 32 8 32zM10.769 14.462L10.769 14.462C9.108 14.462 8 13.285 8 11.831s1.108-2.562 2.769-2.562 2.7 1.108 2.769 2.562C13.538 13.285 12.5 14.462 10.769 14.462zM32.027 32h-5.468c0 0 0-8.27 0-8.885s-.068-2.734-2.392-2.734c-2.05 0-2.392 1.982-2.392 2.734s0 8.885 0 8.885h-5.468V16.281h5.468v2.119c0 0 1.094-2.119 4.306-2.119 3.281 0 5.946 2.255 5.946 6.834V32z"></path>
+                        </svg>
+                </a>
+                <a href="https://www.asifaryaninfo@gmail.com" target="_blank" class="text-gray-400 hover:text-amber-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                        <path fill="#5c7aaf" d="M12.47,40.69c-1.07-0.08-2.5-0.09-3.57-0.04c-1.16,0.06-2.34,0.19-3.49-0.03	c-1.15-0.21-2.29-0.83-2.79-1.9c-0.3-0.63-0.34-1.35-0.37-2.06c-0.04-0.73-0.08-1.47-0.05-2.21c0.04-1,0.19-2,0.26-3	c0.05-0.8,0.05-1.6,0.04-2.41c0.18-4.49-0.4-8.96-0.49-13.43c2.26,2.16,5.29,4.07,7.88,5.79c0.72,0.48,1.4,1,2.07,1.54	c0.09,1.13,0.2,2.23,0.29,3.39c0.11,1.37,0.11,2.75,0.12,4.13C12.38,33.71,12.47,40.69,12.47,40.69z"></path><path fill="#b43b2c" d="M11.96,22.94c-0.67-0.54-1.35-1.06-2.07-1.54c-2.59-1.72-5.62-3.63-7.88-5.79c-0.02-1-0.01-2,0.03-3	c-0.22-4.38,5.08-6.03,8.03-3.23c0.57,0.47,1.1,0.91,1.59,1.32c0.05,1.28-0.03,2.96,0.06,4.15c0.17,2.18,0.03,4.46,0.14,6.65	C11.89,21.99,11.92,22.47,11.96,22.94z"></path><path fill="#cc2729" d="M35.5,21.63c-0.04,0.77-0.07,1.53-0.09,2.28C31.47,26.45,27.99,29.5,24,32	c-3.16-2.36-6.45-4.45-9.39-6.86c-0.89-0.73-1.76-1.48-2.65-2.2c-0.04-0.47-0.07-0.95-0.1-1.44c-0.11-2.19,0.03-4.47-0.14-6.65	c-0.09-1.19-0.01-2.87-0.06-4.15c2.39,2,4.09,3.44,6.32,5.27c1.88,1.34,4.04,2.41,6.02,3.5c4.32-2.27,8.34-5.12,12.17-8.11	C36.52,14.55,35.68,18.49,35.5,21.63z"></path><path fill="#febf10" d="M46.05,15.31c-3.28,3.43-6.58,6.03-9.99,8.17c-0.22,0.14-0.43,0.28-0.65,0.43	c0.02-0.75,0.05-1.51,0.09-2.28c0.18-3.14,1.02-7.08,0.67-10.27c0.39-0.3,0.77-0.6,1.15-0.9c1.05-0.83,2.11-1.69,3.38-2.15	c1.26-0.46,2.8-0.46,3.86,0.35c0.71,0.54,1.12,1.37,1.3,2.22C45.99,12.29,46.04,13.77,46.05,15.31z"></path><path fill="#6eb37d" d="M45.87,39.21c-0.18,0.57-0.63,1.04-1.16,1.32s-1.12,0.4-1.72,0.45c-1.49,0.11-2.97-0.23-4.46-0.28	c-0.89-0.03-2.13,0.03-3.03,0.1c0,0-0.01-2.91,0-4.03c0.03-4.41-0.21-8.54-0.09-12.86c0.22-0.15,0.43-0.29,0.65-0.43	c3.41-2.14,6.71-4.74,9.99-8.17c0.02,4.01-0.26,8.35-0.27,12.45C45.78,31.35,46.52,35.66,45.87,39.21z"></path><path d="M35.62,11.658c0.313,2.13,0.032,4.295-0.24,6.414c-0.277,2.157-0.448,4.298-0.487,6.473	c-0.077,4.223,0.12,8.447,0.106,12.67c-0.004,1.196-0.001,2.392,0.002,3.588c0.001,0.255,0.229,0.52,0.5,0.5	c1.047-0.078,2.103-0.146,3.152-0.098c1.215,0.056,2.417,0.288,3.634,0.295c1.046,0.006,2.167-0.133,3.033-0.767	c0.819-0.6,1.054-1.372,1.173-2.339c0.277-2.25,0.107-4.532-0.04-6.785c-0.15-2.294-0.183-4.569-0.127-6.867	c0.059-2.379,0.161-4.756,0.203-7.136c0.02-1.168,0.026-2.337,0-3.506c-0.024-1.083-0.013-2.213-0.179-3.285	c-0.299-1.932-1.915-3.269-3.837-3.312c-2.098-0.047-3.812,1.232-5.379,2.469c-4.235,3.344-8.606,6.536-13.384,9.069	c0.168,0,0.336,0,0.505,0c-2.183-1.198-4.519-2.275-6.452-3.867c-1.588-1.308-3.165-2.629-4.744-3.948	c-0.916-0.765-1.84-1.521-2.745-2.297C9.712,8.413,9.05,8.008,8.292,7.764C6.918,7.32,5.374,7.443,4.089,8.1	c-1.315,0.672-2.251,1.939-2.484,3.399c-0.172,1.078-0.11,2.23-0.105,3.319c0.007,1.349,0.066,2.696,0.142,4.043	c0.154,2.736,0.38,5.471,0.393,8.213c0.006,1.336,0.004,2.684-0.059,4.018c-0.061,1.286-0.282,2.559-0.286,3.848	c-0.004,1.264-0.066,2.76,0.456,3.939c0.448,1.011,1.39,1.685,2.413,2.038c1.32,0.456,2.745,0.317,4.112,0.244	c1.263-0.068,2.532-0.06,3.794,0.024c0.268,0.018,0.503-0.243,0.5-0.5c-0.03-2.524-0.057-5.048-0.078-7.572	c-0.016-1.937,0.016-3.879-0.078-5.814c-0.126-2.609-0.48-5.194-0.495-7.811c-0.008-1.429,0.019-2.86-0.072-4.286	c-0.091-1.424-0.008-2.85-0.108-4.272c-0.045-0.638-1.045-0.643-1,0c0.086,1.225-0.006,2.452,0.066,3.677	c0.077,1.31,0.111,2.613,0.112,3.925c0.001,2.615,0.237,5.19,0.436,7.795c0.285,3.737,0.142,7.537,0.183,11.284	c0.011,1.025,0.022,2.05,0.034,3.074c0.167-0.167,0.333-0.333,0.5-0.5c-0.998-0.066-2.001-0.082-3.001-0.056	c-1.081,0.028-2.163,0.164-3.245,0.093c-1.014-0.067-2.1-0.38-2.791-1.171c-0.737-0.842-0.676-2.075-0.717-3.126	c-0.047-1.196,0.046-2.362,0.164-3.55c0.119-1.195,0.106-2.382,0.136-3.58c0.061-2.417-0.054-4.827-0.204-7.24	c-0.15-2.407-0.318-4.815-0.307-7.227c0.007-1.591-0.158-3.336,1.028-4.578C4.413,8.822,5.72,8.417,6.981,8.515	c1.7,0.132,2.836,1.305,4.079,2.341c2.984,2.487,5.861,5.233,9.246,7.166c0.977,0.558,1.973,1.082,2.961,1.619	c0.42,0.228,0.637,0.411,1.089,0.21c0.52-0.231,1.018-0.55,1.513-0.832c2.002-1.139,3.938-2.393,5.824-3.716	c1.823-1.279,3.6-2.624,5.353-3.998c1.608-1.261,3.369-2.911,5.564-2.801c1.073,0.054,1.972,0.599,2.452,1.57	c0.454,0.919,0.398,2.037,0.437,3.039c0.087,2.232,0.042,4.467-0.023,6.699c-0.067,2.304-0.161,4.607-0.186,6.912	c-0.024,2.154,0.139,4.291,0.261,6.44c0.062,1.104,0.106,2.211,0.078,3.317c-0.024,0.941,0.087,2.398-0.562,3.146	c-0.75,0.865-2.075,0.906-3.131,0.864c-1.168-0.046-2.323-0.26-3.492-0.294c-0.981-0.029-1.965,0.033-2.943,0.106	c0.167,0.167,0.333,0.333,0.5,0.5c-0.008-2.999,0.012-5.997-0.047-8.996c-0.087-4.433-0.199-8.864,0.366-13.272	c0.305-2.377,0.616-4.753,0.264-7.143C36.491,10.758,35.527,11.027,35.62,11.658L35.62,11.658z"></path><path d="M1.834,16.064c3.218,3.139,7.297,5.148,10.731,8.019c1.74,1.455,3.501,2.862,5.345,4.184	c1.942,1.392,3.918,2.736,5.834,4.165c0.136,0.101,0.367,0.087,0.505,0c4.105-2.589,7.772-5.799,11.868-8.4	c3.751-2.382,7.201-5.027,10.253-8.274c0.441-0.469-0.265-1.177-0.707-0.707c-1.56,1.659-3.219,3.221-5.007,4.632	c-1.67,1.318-3.451,2.464-5.24,3.611c-4.019,2.576-7.632,5.728-11.672,8.275c0.168,0,0.336,0,0.505,0	c-1.853-1.382-3.761-2.684-5.642-4.028c-1.905-1.361-3.715-2.817-5.513-4.314c-3.38-2.813-7.392-4.786-10.553-7.87	C2.08,14.907,1.372,15.614,1.834,16.064L1.834,16.064z"></path>
+                        </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="mt-12 text-center text-gray-500">
+        <p>&copy; 2025 Asifur Rahman. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
